@@ -1,0 +1,2 @@
+# CF-CORS
+cloudflare cors
