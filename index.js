@@ -125,14 +125,14 @@ addEventListener("fetch", async event=>{
                 return new Response(
                     "M4UNDYS-CORS-PROXY\n\n" + 
                     "SOURCE:\nhttps://maundys.net\n\n" + 
-                    "USAGE:\n" + origin_url.origin + "/?uri\n\n" +
+                    "USAGE:\n" + origin_url.origin + "/?http://the-url-2-proxy.com\n\n" +
 
-                    "LIMITES: 100,000 requests/day\n" + 
+                    "LIMITS: 100,000 requests/day\n" + 
                     "          1,000 requests/10 minutes\n\n" + 
                     (orig != null ? "Origin: " + orig + "\n" : "") + 
                     "IP: " + remIp + "\n" + 
-                    (country ? "Country: " + country + "\n" : "") + 
-                    (colo ? "Datacenter: " + colo + "\n" : "") + "\n" + 
+                    (country ? "YOUR COUNTRY: " + country + "\n" : "") + 
+                    (colo ? "YOUR DC: " + colo + "\n" : "") + "\n" + 
                     ((xheaders != null) ? "\nx-cors-headers: " + JSON.stringify(xheaders) : ""),
                     {status: 200, headers: myHeaders}
                 );
